@@ -1,0 +1,12 @@
+{
+  "plugins": ["richquotes", "disqus", "exercises", "quizzes"],
+    
+  "pluginsConfig": {
+    "disqus": {
+      "shortName": "clojure-practicalli"
+     },
+    "richquotes": {
+      "todos": true 
+    }
+  }
+}
