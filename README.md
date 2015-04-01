@@ -2,9 +2,13 @@
 
 ![Clojure logo](images/clojure-practicalli-banner.png)
 
+> If the images are broken, please view this book at [Clojure.practical.li](http://clojure.practical.li)
+
   This is an introduce to the Clojure programming language aimed at those just starting.  The aim is to present Clojure in a simple to understand and highly practical way, so you can evaluate where Clojure is useful in your own projects.
 
-> **Comment**  A _just enough theory_ approach it taken as a quick way to start your journey into Clojure.  There are many excellent books published on Clojure that go into far greater detail and theory behind the language.
+> **Comment** We take a _just enough theory_ approach as a quick way to start your journey into Clojure.  That way you can start exploring the language by building software that does things.  
+
+> There are many excellent books published on Clojure that go into detailed theory behind the language, so no need to repeat that here.
 
 #### Resources
 
@@ -22,6 +26,7 @@
 * [Clojure documentation](http://clojure.org/documentation)
 * [Clojure cheetsheet](http://clojure.org/cheatsheet)
 * [Official Google group](https://groups.google.com/forum/#!forum/clojure)
+* [CrossClj](http://crossclj.info/) - cross-referencing the Clojure ecosystem
 
 **Tooling**
 * [Leiningen](http://leiningen.org/), [tutorial](https://github.com/technomancy/leiningen/blob/stable/doc/TUTORIAL.md), [faq](https://github.com/technomancy/leiningen/blob/stable/doc/FAQ.md), [plugins list](https://github.com/technomancy/leiningen/wiki/Plugins) & [sample project file](https://github.com/technomancy/leiningen/blob/stable/sample.project.clj)
@@ -39,6 +44,13 @@
 **Books & Tutorials**
 * [Clojure cookbook](https://github.com/clojure-cookbook/clojure-cookbook)
 
+**Music**
+* [Overtone](https://github.com/overtone/overtone) - toolkit for designing synthesizers and collaborating with music
+* [Meta-x/ignite](https://github.com/meta-ex/ignite) - live performance music & graphics
+
+**Misc**
+* [Lively Clojureschool](https://github.com/likely/clojure-school)
+* [Lively projects](https://github.com/likely)
 
 | Author | Date |
 | -- | -- |
