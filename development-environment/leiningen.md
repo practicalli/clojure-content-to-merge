@@ -1,16 +1,17 @@
 # Leiningen Build tool
 
-Leiningen (pronounced line-i-gen) is a very powerful build automation tool.  With it you can:
+Leiningen (pronounced line-ing-en) is a very powerful build automation tool.  With it you can:
 
 * Create Clojure Projects
 * Define and manage dependencies
-* Run Clojure applications
 * Run an interactive Clojure environment (REPL)
 * etc.
 
+<div align="center">
 ![Leiningen - build automation for Clojure](../images/leiningen-repl-custom-prompt.png)
+</div>
 
-> **Note** Install Leiningen and test it works
+## Install Leiningen and test it works
 
   Download the install script from [leiningen.org](http://leiningen.org/) and run the Leiningen script in a terminal
 
@@ -18,6 +19,8 @@ Leiningen (pronounced line-i-gen) is a very powerful build automation tool.  Wit
 
     chmod a+x lein
     ./lein
+
+> **hint** I create a `~/bin` directory and add it to my operating system execution path ($PATH), placing the `lein` script in `~/bin` so I can call it from anywhere on the filesystem.
 
   Test that Leiningen is installed with the following command
 
