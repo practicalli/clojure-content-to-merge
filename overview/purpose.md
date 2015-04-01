@@ -4,3 +4,7 @@
 
 * what aspects of clojure make it suitable for developing certain apps 
 
+
+
+
+

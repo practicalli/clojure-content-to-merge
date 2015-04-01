@@ -27,5 +27,11 @@
     (1 + 2 + 3 + 5 + 8 + 13 + 21);
     (1 + 2 + (- 4 1) + 5 + (* 2 4) + 13 + (/ 42 2));
     StringBuffer mystring = new StringBuffer("C-based languages" + " mix " + "notation");
-    x+=1; x++; x--; x+=y; x-=y; x*=y; x/=y;
+    x+=1; 
+    x++; 
+    x--; 
+    x+=y; 
+    x-=y; 
+    x*=y; 
+    x/=y;
 ```
