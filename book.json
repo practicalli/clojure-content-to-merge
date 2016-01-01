@@ -1,5 +1,16 @@
 {
+    "gitbook": ">=2.0.0",
+    "title": "Clojure - building simple clojure apps",
+    "styles": {
+        "website": "styles/website.css",
+        "ebook": "styles/ebook.css",
+        "pdf": "styles/pdf.css",
+        "mobi": "styles/mobi.css",
+        "epub": "styles/epub.css"
+    },
     "plugins": [
+        "toggle-chapters",
+        "codeblock-disable-glossary",
         "richquotes",
         "disqus",
         "exercises",
