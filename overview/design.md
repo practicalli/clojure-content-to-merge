@@ -4,9 +4,17 @@
 
 # Everything is a list
 
-    
+Clojure code is represented as a list, with the first element of that list evaluated as a function call.  This is a language design from LISP (List Processing) and gives Clojure much of its flexibility and concise nature.
+
+The List is also a build in persistent data structure.  Persistent data structures are immutable (cannot change state once created), however the result of running a function over a list can return a list that contains only the changes between the original list and the result returned.  This is a highly efficient way to manage data changes in memory.
 
 # Maps & Vectors
+
+Maps and vectors are two more built-in persistent data structures that are more commonly used to represent data within a Clojure application.
+
+Vectors are a catch all data structure that can hold any type of information, including other data structures and function calls.
+
+Maps are a collection of key / value pairs that provide an easy way to reference data by keys.  Its common to use Clojure `keywords` as the keys as keywords are self-referential (they point to themselves).  Using keywords in a map means you can use a specific keyword as a function call on the map that returns its associated value.
 
 
 # Extensibility via Macros 
@@ -50,4 +58,3 @@
 ```
 
 >  param's can be functions too !!
-
