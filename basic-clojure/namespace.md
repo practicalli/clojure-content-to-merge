@@ -34,11 +34,11 @@
 (read-the-file "project.clj")
 ```
 
-Or if you are going to use the function multiple times in the current namespace, you could also include that function directly, no longer requiring any kind of namespace qualifier
+Or if you are going to use the function multiple times in the current namespace, you could also include that function directly using `:refer`, no longer requiring any kind of namespace qualifier
 
 ```clojure 
 (ns my-namespace.core 
-  :require [clojure.java.io :as [reader]])
+  :require [clojure.java.io :refer [reader]])
   
 (defn read-the-file [filename]
   (line-seq (reader filename)))  
@@ -46,9 +46,27 @@ Or if you are going to use the function multiple times in the current namespace,
 (read-the-file "project.clj")
 ```
 
-> **Hint** You may see `use` or `:use` as an alternative approach.  While this will work, it also includes everything from the other namespace into your current one.  This is seen as a bad practice, especially when writing libraries, as you can end up including a great many unused functions into the namespace.  
+## Adding multiple namespaces 
+
+If you are going to add multiple namespaces, you can do so with just one `:require` statement
+
+Here is an example namespace expression with multiple require statements from the [duct](https://github.com/weavejester/duct) web framework template 
+
+```clojure 
+(ns duct-test.main
+  (:require [clojure.java.io :as io]
+            [com.stuartsierra.component :as component]
+            [duct.middleware.errors :refer [wrap-hide-errors]]
+            [meta-merge.core :refer [meta-merge]]
+            [duct-test.config :as config]
+            [duct-test.system :refer [new-system]]))
+```
+
+> **Hint** You may see `use` or `:use` as an alternative approach.  While this will work, it also includes everything from the other namespace into your current one.  This is seen as a bad practice, especially when writing libraries, as you can end up including a great many unused functions into the namespace.
 
 > As Clojure is typically composed of many libraries, its prudent to only include the specific things you need from another namespace.  This also helps reduce conflicts when including multiple libraries in your project.
+
+> You can use the `:exclude` keyword with `:use` to avoid including specific functions from the required namespace.
   
 
 ## External libraries 
@@ -56,6 +74,14 @@ Or if you are going to use the function multiple times in the current namespace,
   To use a library that is not part of your project you also need to include it as a dependency.  You can do this using the `:dependencis` section of the  Leiningen project file.
 
 ```clojure
-;; include and example dependency - eg ring, compujure
+(defproject duct-test "0.1.0-SNAPSHOT"
+  :description "FIXME: write description"
+  :url "http://example.com/FIXME"
+  :min-lein-version "2.0.0"
+  :dependencies [[org.clojure/clojure "1.7.0"]
+                 [org.clojure/clojurescript "1.7.122"]
+                 [com.stuartsierra/component "0.3.0"]
+                 [compojure "1.4.0"]
+                 [duct "0.4.4"]
+                 [environ "1.0.1"]])
 ```
-

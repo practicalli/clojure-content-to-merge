@@ -9,5 +9,4 @@
 gitbook build .
 
 # Deploy new build
-cd _book && git init && git add . && git commit -m "initial commit" && git branch -m master gh-pages && git remote add practicalli-clojure git@github.com:practicalli/clojure.git && git push -f practicalli-clojure gh-pages
-
+cd _book && rm -rf .git && git init && git add . && git commit -m "initial commit" && git branch -m master gh-pages && git remote add practicalli-clojure git@github.com:practicalli/clojure.git && git push -f practicalli-clojure gh-pages

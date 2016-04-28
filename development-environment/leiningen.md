@@ -7,9 +7,7 @@ Leiningen (pronounced line-ing-en) is a very powerful build automation tool.  Wi
 * Run an interactive Clojure environment (REPL)
 * etc.
 
-<div align="center">
 ![Leiningen - build automation for Clojure](../images/leiningen-repl-custom-prompt.png)
-</div>
 
 ## Install Leiningen and test it works
 

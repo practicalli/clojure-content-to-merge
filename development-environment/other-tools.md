@@ -2,6 +2,15 @@
 
 Clojure runs on the Java Virtual Machine so its not surprising that there is good support for Clojure in the major Java IDEs.
 
+## Emacs / Spacemacs
+
+Emacs has always given great Clojure support and is a very powerfull tool for Clojure & Clojurescript development.
+
+The easiest way to set Emacs up as a Clojure tool is to use Spacemacs and add the Clojure layer to the `.spacemacs` file once Spacemacs has been installed.
+
+Recommended Emacs version 24.4 or any greater minor version (Emacs 25.x is a bit too new just yet)
+
+> On MacOSX a really old version of emacs is installed by default (version 22.x).  This should not be used and you may have to rename the exectuable if you want to run emacs from the command line.  Alternatively, create an ailas for emacs in your profie that points to the right version.
 
 ## Eclipse
 

@@ -18,6 +18,7 @@ Examples of predicate naming conventions from `clojure.core`
 ```
 contains?
 empty?
+every?
 not-empty?
 null?
 ```
@@ -32,4 +33,6 @@ Examples
 ```
 md->html
 
+map->Record-name  ; map factory function of a record -- creates a new record from a map
+->Record-name     ; positional factory function of a record -- creates a new record from a list of values
 ```
